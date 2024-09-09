@@ -24,6 +24,15 @@ public class Technician_page extends AbstractComponents{
 	@FindBy (css="button.invite-tech-btn")
 	public WebElement addATechnicianButton;
 	
+	@FindBy (css="input#firstName")
+	public WebElement addTech_FirstName;
+	
+	@FindBy (css="input#lastName")
+	public WebElement addTech_LastName;
+	
+	@FindBy (css="input#email")
+	public WebElement addTech_Email;
+	
 	@FindBy (css="div.t-item-container>div.t-info-container:nth-child(4) div.t-header")
 	public List<WebElement> technicianStatus;
 	
@@ -35,5 +44,12 @@ public class Technician_page extends AbstractComponents{
 	public void addATechnicianButtonClicked() {
 		((JavascriptExecutor) driver).executeScript("arguments[0].click();", addATechnicianButton);
 	}
+	
+	public void fillAddTechnicianForm(String firstName, String lastName, String email) {
+		addTech_FirstName.sendKeys(firstName);
+		addTech_LastName.sendKeys(lastName);
+		addTech_Email.sendKeys(email);
+	}
+	
 
 }

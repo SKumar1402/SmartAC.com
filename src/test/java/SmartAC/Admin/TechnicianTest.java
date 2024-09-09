@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.github.javafaker.Faker;
 import com.smartac.base.TestBase;
 
 import AbstractComponents.AbstractComponents;
@@ -37,6 +38,13 @@ public class TechnicianTest extends TestBase{
 	@Test(priority=3)
 	public void VerifyAddATechnician() {
 		abc.tech.addATechnicianButtonClicked();
+		Faker faker = new Faker();
+		String firstName=faker.name().firstName();
+		String lastName=faker.name().lastName();
+		String email=firstName+"."+lastName+"@smartac.com";
+		System.err.println("First Name is : "+firstName);
+		System.err.println("Last name is : "+lastName);
+		System.err.println("Email is : "+email);
 	}
 	
 	

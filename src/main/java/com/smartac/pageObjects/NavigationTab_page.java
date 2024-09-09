@@ -31,58 +31,61 @@ public class NavigationTab_page extends AbstractComponents{
 	public WebElement membersTab;
 	
 	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(6) img")
-	public WebElement recentCyclesTab;
+	public WebElement memberOrdersTab;
 	
 	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(7) img")
-	public WebElement userActivitiesTab;
+	public WebElement ordersTab;
 	
 	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(8) img")
 	public WebElement serviceRequestsTab;
 	
 	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(9) img")
-	public WebElement memberOrdersTab;
+	public WebElement comfortCreditTab;
 	
 	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(10) img")
-	public WebElement ordersTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(11) img")
-	public WebElement comfortCreditsTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(12) img")
-	public WebElement devicesTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(13) img")
-	public WebElement eventsTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(14) img")
-	public WebElement quatlityAuditsTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(15) img")
 	public WebElement partnersTab;
 	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(16) img")
-	public WebElement HVACProfileTab;
-
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(17) img")
-	public WebElement HVACCatelogTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(18) img")
-	public WebElement airFilterManagementTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(19) img")
-	public WebElement manageTestAlertsTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(20) img")
-	public WebElement productsTab;
-	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(21) img")
+	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(11) img")
 	public WebElement settingsTab;
 	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(22) img")
+	@FindBy (css="div.app-modal button:nth-child(1)")
+	public WebElement recentCycles;
+	
+	@FindBy (css="div.app-modal button:nth-child(2)")
+	public WebElement devicesTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(3)")
+	public WebElement eventsTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(4)")
+	public WebElement quatlityAuditsTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(5)")
+	public WebElement HVACProfileTab;
+
+	@FindBy (css="div.app-modal button:nth-child(6)")
+	public WebElement HVACCatelogTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(7)")
+	public WebElement airFilterManagementTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(8)")
+	public WebElement manageTestAlertsTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(9)")
 	public WebElement recentOnboardsTab;
 	
-	@FindBy (css="div.navbar-container>nav.middle-container>a:nth-child(23) img")
+	@FindBy (css="div.app-modal button:nth-child(10)")
 	public WebElement leadsUnpublishedTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(11)")
+	public WebElement memberSupportTab;
+	
+	@FindBy (css="div.app-modal button:nth-child(12)")
+	public WebElement userActivityTab;
+	
+	@FindBy (css="button.more-tool")
+	public WebElement moreToolsbutton;
 	
 	@FindBy (css="div.right-container>div.profile-container img")
 	public WebElement profileIcon;
