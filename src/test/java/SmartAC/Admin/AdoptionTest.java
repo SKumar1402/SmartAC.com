@@ -22,7 +22,7 @@ public class AdoptionTest extends TestBase{
 		abc.loginpage=abc.navigateToURL(URL);
 		abc.navbar=abc.loginpage.login(email, password);
 	}
-	
+	//Sunil
 	@Test(priority=1)
 	public void VerifyAdoptionURL() {
 		abc.adopt=abc.navbar.adoptionTabClicked();
